@@ -1,7 +1,13 @@
 <?php get_header(); ?>
 <h1>Welcome to our website</h1>
+
+<!-- <h2><?php post_type_archive_title(); ?></h2> -->
+
 <h4>I am archive</h4>
-<h2><?php the_archive_title(); ?></h2>
+<title><?php wp_title(); ?></title>
+
+<h2>Archive Title: <?php the_archive_title(); ?></h2>
+<h2><?php wp_title(); ?></h2>
 
 <?php
 while (have_posts()) {
@@ -16,5 +22,6 @@ while (have_posts()) {
 <?php
 }
 ?>
+<br>
 
 <p>Footer</p>

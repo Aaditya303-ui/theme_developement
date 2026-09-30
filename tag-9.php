@@ -27,7 +27,7 @@
             </div>
 
             <div class="pagination">
-                <?php the_posts_pagination(); ?>
+               
             </div>
         <?php else : ?>
             <p>No posts found in this category.</p>
